@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F4F6FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android Low Memory Killer"
+            android:textColor="#172554"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RAM Management Simulation"
+            android:textSize="15sp"
+            android:textColor="#64748B"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <TextView
+            android:id="@+id/tvUsed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Used RAM: 0 MB"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#172554"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/tvFree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Free RAM: 0 MB"
+            android:textSize="16sp"
+            android:textColor="#334155"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/tvPressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RAM Pressure: 0%"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#B91C1C"
+            android:padding="6dp" />
+
+        <ProgressBar
+            android:id="@+id/ramBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="#2563EB"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnIncrease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Increase Memory Usage" />
+
+        <Button
+            android:id="@+id/btnRun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Run LMK" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Simulation" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simulated Processes"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#172554"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvApps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App details will appear here"
+            android:textSize="15sp"
+            android:textColor="#334155"
+            android:background="#FFFFFF"
+            android:padding="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Termination Log"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#172554"
+            android:paddingTop="20dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simulation ready."
+            android:textSize="15sp"
+            android:textColor="#166534"
+            android:background="#FFFFFF"
+            android:padding="14dp" />
+
+    </LinearLayout>
+
+</ScrollView>
